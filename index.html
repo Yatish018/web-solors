@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-accent="sun" data-font="modern">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WEB SOLOR'S – Solar panel installation in Rajasthan</title>
+<meta name="description" content="Rooftop and farm solar installation across Rajasthan. Free site visit and WhatsApp consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Fraunces:wght@400;700;900&family=Baloo+2:wght@400;600;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fffaf0;--surface:#fff;--text:#1f1a12;--muted:#6a6152;--line:#eadfc8;--accent:#d97706;--on:#fff;--f:"Sora"}
+[data-accent="sun"]{--accent:#d97706}
+[data-accent="leaf"]{--accent:#15803d}
+[data-accent="sky"]{--accent:#0369a1}
+[data-accent="violet"]{--accent:#7c3aed}
+[data-theme="dark"]{--bg:#12110e;--surface:#1c1a15;--text:#f5efe2;--muted:#a89f8c;--line:#332e24}
+[data-theme="dark"][data-accent="sun"]{--accent:#fbbf24;--on:#241600}
+[data-theme="dark"][data-accent="leaf"]{--accent:#4ade80;--on:#052010}
+[data-theme="dark"][data-accent="sky"]{--accent:#38bdf8;--on:#03202e}
+[data-theme="dark"][data-accent="violet"]{--accent:#c4b5fd;--on:#1d0f45}
+[data-font="modern"]{--f:"Sora"}
+[data-font="classic"]{--f:"Fraunces"}
+[data-font="friendly"]{--f:"Baloo 2"}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.02rem/1.7 var(--f),"Noto Sans Devanagari",system-ui,sans-serif;transition:background .3s,color .3s}
+html[lang="hi"] body{line-height:1.85}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:.6rem;padding:.65rem 0}
+.logo{font-weight:800;font-size:1.25rem;text-decoration:none;margin-right:auto;display:flex;gap:.45rem;align-items:center}
+.logo i{width:26px;height:26px;border-radius:50%;background:var(--accent);display:inline-block;box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 25%,transparent)}
+.btn{font:inherit;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--text);padding:.45rem .85rem;border-radius:10px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn:hover{border-color:var(--accent)}
+.btn.p{background:var(--accent);color:var(--on);border-color:var(--accent);padding:.8rem 1.4rem}
+.btn.wa{background:#25d366;color:#04230f;border-color:#25d366;padding:.8rem 1.4rem}
+#overlay{position:fixed;inset:0;background:#0006;opacity:0;pointer-events:none;transition:opacity .25s;z-index:30}
+#drawer{position:fixed;top:0;right:0;height:100%;width:min(340px,88vw);background:var(--surface);z-index:40;transform:translateX(100%);transition:transform .3s;padding:1.2rem;overflow:auto;border-left:1px solid var(--line)}
+body.menu #drawer{transform:none}
+body.menu #overlay{opacity:1;pointer-events:auto}
+#drawer nav{display:grid;gap:.2rem;margin:1rem 0 1.5rem}
+#drawer nav a{padding:.65rem .8rem;border-radius:10px;text-decoration:none;font-weight:600}
+#drawer nav a:hover{background:var(--bg);color:var(--accent)}
+.opt{display:flex;gap:.5rem;flex-wrap:wrap;margin:.5rem 0 1.1rem}
+.dot{width:30px;height:30px;border-radius:50%;border:3px solid var(--surface);box-shadow:0 0 0 1px var(--line);cursor:pointer;padding:0}
+.dot[aria-pressed="true"],.btn[aria-pressed="true"]{box-shadow:0 0 0 2px var(--text)}
+h4{margin:0;color:var(--muted);font-size:.9rem;font-weight:600}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;align-items:center;padding:3.5rem 0}
+.clock{display:inline-flex;gap:.55rem;align-items:center;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.3rem .9rem;font-size:.9rem;color:var(--muted)}
+.st{width:9px;height:9px;border-radius:50%;background:#999}.st.on{background:#16a34a}
+h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.1;margin:1rem 0;font-weight:800;letter-spacing:-.02em}
+html[lang="hi"] h1{line-height:1.3;letter-spacing:0}
+.lead{color:var(--muted);font-size:1.1rem;max-width:50ch}
+.acts{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem}
+.scene{border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.scene svg{display:block;width:100%;height:auto}
+section{padding:3.2rem 0;border-top:1px solid var(--line)}
+h2{font-size:1.8rem;margin:0 0 1.4rem;line-height:1.25}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.3rem}
+.card h3{margin:.2rem 0 .35rem;font-size:1.1rem}.card p{margin:0;color:var(--muted)}
+.gal .card{padding:0;overflow:hidden}.gal .card div{padding:1rem 1.2rem}
+.steps{counter-reset:s;display:grid;gap:.8rem;padding:0;list-style:none}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1rem 1rem 1rem 3.4rem;position:relative}
+.steps li:before{content:counter(s);position:absolute;left:1rem;top:.9rem;width:1.9rem;height:1.9rem;border-radius:50%;background:var(--accent);color:var(--on);display:grid;place-items:center;font-weight:800}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+label{font-weight:600;display:block;margin:.6rem 0 .3rem}
+input,select,textarea{font:inherit;padding:.7rem .9rem;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--text);width:100%}
+input[type=range]{padding:0;accent-color:var(--accent)}
+.big{font-size:2rem;font-weight:800;color:var(--accent);line-height:1.2}
+.res{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1rem 0}
+.res div{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:.7rem .9rem}
+.res small{color:var(--muted);display:block}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}.chips span{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.3rem .9rem}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;margin-bottom:.6rem}
+summary{cursor:pointer;font-weight:600}details p{margin:.6rem 0 0;color:var(--muted)}
+form{display:grid;gap:.4rem;max-width:560px}
+footer{border-top:1px solid var(--line);padding:2rem 0 5rem;color:var(--muted)}
+.fab{position:fixed;right:16px;bottom:16px;z-index:15;background:#25d366;color:#04230f;font-weight:700;border-radius:999px;padding:.8rem 1.2rem;text-decoration:none;box-shadow:0 6px 18px #0004}
+@media(max-width:820px){.hero,.calc{grid-template-columns:1fr}.hide-s{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a class="logo" href="#top"><i></i><span>WEB SOLOR'S</span></a>
+  <button class="btn hide-s" id="themeBtn" aria-label="Toggle dark mode">🌙</button>
+  <button class="btn" id="langBtn" aria-label="Change language">हिं</button>
+  <button class="btn" id="menuBtn" aria-expanded="false" aria-controls="drawer" aria-label="Menu">☰ <span data-i="menu">Menu</span></button>
+</div></header>
+<div id="overlay"></div>
+<aside id="drawer" aria-label="Menu">
+  <button class="btn" id="closeBtn" aria-label="Close menu">✕</button>
+  <nav>
+    <a href="#services" data-i="n_services">Services</a><a href="#gallery" data-i="n_gallery">Projects</a>
+    <a href="#calculator" data-i="n_calc">Savings calculator</a><a href="#process" data-i="n_process">How it works</a>
+    <a href="#faq" data-i="n_faq">Questions</a><a href="#contact" data-i="n_contact">Free consultation</a>
+  </nav>
+  <h4 data-i="d_color">Colour</h4>
+  <div class="opt" id="dots">
+    <button class="dot" data-a="sun" style="background:#d97706" aria-label="Sun"></button>
+    <button class="dot" data-a="leaf" style="background:#15803d" aria-label="Leaf"></button>
+    <button class="dot" data-a="sky" style="background:#0369a1" aria-label="Sky"></button>
+    <button class="dot" data-a="violet" style="background:#7c3aed" aria-label="Violet"></button>
+  </div>
+  <h4 data-i="d_font">Text style</h4>
+  <div class="opt" id="fonts">
+    <button class="btn" data-f="modern" style="font-family:Sora">Modern</button>
+    <button class="btn" data-f="classic" style="font-family:Fraunces">Classic</button>
+    <button class="btn" data-f="friendly" style="font-family:'Baloo 2'">Friendly</button>
+  </div>
+  <h4 data-i="d_mode">Mode</h4>
+  <div class="opt"><button class="btn" id="themeBtn2">🌙</button></div>
+</aside>
+
+<main id="top">
+<div class="wrap hero">
+  <div>
+    <div class="clock"><span class="st" id="st"></span><span id="clock"></span></div>
+    <h1 id="greet"></h1>
+    <p class="lead" data-i="lead">Rooftop, farm and factory solar across Rajasthan. Tell us your electricity bill and we'll size your system on WhatsApp.</p>
+    <div class="acts">
+      <a class="btn wa" id="waHero" target="_blank" rel="noopener" data-i="wa">Chat on WhatsApp</a>
+      <a class="btn p" href="#calculator" data-i="try">Calculate my savings</a>
+    </div>
+  </div>
+  <div class="scene" id="heroScene"></div>
+</div>
+
+<section id="services"><div class="wrap">
+  <h2 data-i="h_services">What we install</h2>
+  <div class="grid">
+    <div class="card"><div style="font-size:1.7rem">🏠</div><h3 data-i="s1t">Home rooftop</h3><p data-i="s1p">On-grid systems that cut your monthly bill and qualify for the government subsidy.</p></div>
+    <div class="card"><div style="font-size:1.7rem">🌾</div><h3 data-i="s2t">Farm and solar pumps</h3><p data-i="s2p">Daytime power for irrigation, with no dependence on the grid schedule.</p></div>
+    <div class="card"><div style="font-size:1.7rem">🏭</div><h3 data-i="s3t">Shops and factories</h3><p data-i="s3p">Larger systems that lower running costs and pay back within a few years.</p></div>
+    <div class="card"><div style="font-size:1.7rem">🔧</div><h3 data-i="s4t">Service and cleaning</h3><p data-i="s4p">Yearly checks and panel cleaning, because Rajasthan dust cuts output.</p></div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <h2 data-i="h_gallery">Our work</h2>
+  <div class="grid gal" id="gal"></div>
+  <p class="lead" style="margin-top:1rem" data-i="galnote">Illustrations shown. Real project photos go in the images folder (see README).</p>
+</div></section>
+
+<section id="calculator"><div class="wrap">
+  <h2 data-i="h_calc">Solar savings calculator</h2>
+  <div class="calc card">
+    <div>
+      <label for="bill"><span data-i="c_bill">Monthly electricity bill</span>: <b id="billV"></b></label>
+      <input id="bill" type="range" min="500" max="30000" step="100" value="3000">
+      <label for="ctype" data-i="c_type">Property type</label>
+      <select id="ctype"><option value="home" data-i="t_home">Home</option><option value="biz" data-i="t_biz">Shop / factory</option></select>
+      <p class="lead" style="font-size:.9rem" data-i="c_note">Estimates only. Final size and price come after a site visit.</p>
+    </div>
+    <div>
+      <div class="big" id="kw"></div>
+      <div class="res">
+        <div><small data-i="r_cost">System cost</small><b id="rCost"></b></div>
+        <div><small data-i="r_sub">Subsidy (homes)</small><b id="rSub"></b></div>
+        <div><small data-i="r_save">Saving per month</small><b id="rSave"></b></div>
+        <div><small data-i="r_pay">Pays back in</small><b id="rPay"></b></div>
+      </div>
+      <a class="btn wa" id="waCalc" target="_blank" rel="noopener" data-i="c_send">Send this to us on WhatsApp</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="process"><div class="wrap">
+  <h2 data-i="h_process">How it works</h2>
+  <ol class="steps">
+    <li><b data-i="p1t">Message us</b><br><span data-i="p1p">Send your bill and location on WhatsApp.</span></li>
+    <li><b data-i="p2t">Free site visit</b><br><span data-i="p2p">Our engineer checks the roof, shade and load.</span></li>
+    <li><b data-i="p3t">Quote and subsidy paperwork</b><br><span data-i="p3p">A written quote, and we help with the government portal.</span></li>
+    <li><b data-i="p4t">Installation and net meter</b><br><span data-i="p4p">Most home systems are installed in a few days.</span></li>
+  </ol>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2 data-i="h_faq">Common questions</h2>
+  <details><summary data-i="q1">Will solar work on cloudy days?</summary><p data-i="a1">Yes, at reduced output. Rajasthan gets strong sun most of the year, so annual generation is high.</p></details>
+  <details><summary data-i="q2">Is there a government subsidy?</summary><p data-i="a2">Homes can get a subsidy under the PM Surya Ghar scheme. Amounts change, so we confirm the current figure in your quote.</p></details>
+  <details><summary data-i="q3">How long do panels last?</summary><p data-i="a3">Good panels are usually warranted for 25 years, with inverter and installation warranties on top.</p></details>
+  <h2 style="margin-top:2.2rem" data-i="h_cities">Where we work</h2>
+  <div class="chips" id="cities"></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2 data-i="h_contact">Free consultation on WhatsApp</h2>
+  <form id="form">
+    <label for="fn" data-i="f_name">Your name</label><input id="fn" required>
+    <label for="fc" data-i="f_city">City</label><select id="fc"></select>
+    <label for="ft" data-i="f_type">I need solar for</label>
+    <select id="ft"><option data-i="t_home">Home</option><option data-i="t_farm">Farm</option><option data-i="t_biz">Shop / factory</option></select>
+    <label for="fm" data-i="f_msg">Anything else?</label><textarea id="fm" rows="3"></textarea>
+    <button class="btn wa" type="submit" style="margin-top:.6rem" data-i="f_send">Open WhatsApp</button>
+  </form>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> WEB SOLOR'S · <span data-i="rights">All rights reserved.</span></div></footer>
+<a class="fab" id="fab" target="_blank" rel="noopener">💬 WhatsApp</a>
+
+<script>
+/* 1. CLIENT CONFIG: change only this block for each client */
+const CONFIG = {
+  whatsapp: "917023013549",           // country code + number, no + or spaces
+  timezone: "Asia/Kolkata",
+  openDays: [1,2,3,4,5,6], openHour: 9, closeHour: 22,
+  units: { rate: 8, perKwMonth: 125, costPerKw: 60000 },   // ₹/unit, units per kW per month, ₹ per kW (edit to client's real prices)
+  subsidy: { perKw: 30000, kwFull: 2, third: 18000, max: 78000 },  // verify current PM Surya Ghar figures before publishing
+  cities: ["Jaipur","Jodhpur","Udaipur","Kota","Ajmer","Bikaner","Alwar","Bhilwara","Sikar","Pali","Sri Ganganagar","Bharatpur"]
+};
+
+/* 2. TRANSLATIONS */
+const T = {
+en:{menu:"Menu",n_services:"Services",n_gallery:"Projects",n_calc:"Savings calculator",n_process:"How it works",n_faq:"Questions",n_contact:"Free consultation",
+d_color:"Colour",d_font:"Text style",d_mode:"Mode",lead:"Rooftop, farm and factory solar across Rajasthan. Tell us your electricity bill and we'll size your system on WhatsApp.",
+wa:"Chat on WhatsApp",try:"Calculate my savings",h_services:"What we install",
+s1t:"Home rooftop",s1p:"On-grid systems that cut your monthly bill and qualify for the government subsidy.",
+s2t:"Farm and solar pumps",s2p:"Daytime power for irrigation, with no dependence on the grid schedule.",
+s3t:"Shops and factories",s3p:"Larger systems that lower running costs and pay back within a few years.",
+s4t:"Service and cleaning",s4p:"Yearly checks and panel cleaning, because Rajasthan dust cuts output.",
+h_gallery:"Our work",galnote:"Illustrations shown. Real project photos go in the images folder (see README).",
+g1:"Home rooftop, Jaipur",g2:"Ground-mount plant, Jodhpur",g3:"Farm pump system, Bikaner",
+h_calc:"Solar savings calculator",c_bill:"Monthly electricity bill",c_type:"Property type",t_home:"Home",t_biz:"Shop / factory",t_farm:"Farm",
+c_note:"Estimates only. Final size and price come after a site visit.",r_cost:"System cost",r_sub:"Subsidy (homes)",r_save:"Saving per month",r_pay:"Pays back in",
+c_send:"Send this to us on WhatsApp",yrs:"years",kw:"kW system recommended",
+h_process:"How it works",p1t:"Message us",p1p:"Send your bill and location on WhatsApp.",p2t:"Free site visit",p2p:"Our engineer checks the roof, shade and load.",
+p3t:"Quote and subsidy paperwork",p3p:"A written quote, and we help with the government portal.",p4t:"Installation and net meter",p4p:"Most home systems are installed in a few days.",
+h_faq:"Common questions",q1:"Will solar work on cloudy days?",a1:"Yes, at reduced output. Rajasthan gets strong sun most of the year, so annual generation is high.",
+q2:"Is there a government subsidy?",a2:"Homes can get a subsidy under the PM Surya Ghar scheme. Amounts change, so we confirm the current figure in your quote.",
+q3:"How long do panels last?",a3:"Good panels are usually warranted for 25 years, with inverter and installation warranties on top.",
+h_cities:"Where we work",h_contact:"Free consultation on WhatsApp",f_name:"Your name",f_city:"City",f_type:"I need solar for",f_msg:"Anything else?",f_send:"Open WhatsApp",
+rights:"All rights reserved.",open:"Open now",closed:"Closed now",gm:"Good morning",ga:"Good afternoon",ge:"Good evening",
+tag:"Cut your power bill with solar.",
+m_hi:"Hello WEB SOLOR'S, I'd like a solar consultation.",m_calc:"Hello WEB SOLOR'S. My monthly bill is",m_need:"Estimate shows about",m_form:"Hello WEB SOLOR'S, I'd like a free consultation."},
+hi:{menu:"मेन्यू",n_services:"सेवाएँ",n_gallery:"प्रोजेक्ट",n_calc:"बचत कैलकुलेटर",n_process:"कैसे काम करता है",n_faq:"सवाल-जवाब",n_contact:"मुफ़्त सलाह",
+d_color:"रंग",d_font:"अक्षर शैली",d_mode:"मोड",lead:"पूरे राजस्थान में घर, खेत और फ़ैक्ट्री के लिए सोलर। अपना बिजली बिल बताइए, हम WhatsApp पर सिस्टम का साइज़ बताएँगे।",
+wa:"WhatsApp पर चैट करें",try:"मेरी बचत निकालें",h_services:"हम क्या लगाते हैं",
+s1t:"घर की छत",s1p:"ऑन-ग्रिड सिस्टम जो मासिक बिल घटाते हैं और सरकारी सब्सिडी के योग्य हैं।",
+s2t:"खेत और सोलर पंप",s2p:"सिंचाई के लिए दिन में बिजली, ग्रिड के समय पर निर्भर हुए बिना।",
+s3t:"दुकानें और फ़ैक्ट्रियाँ",s3p:"बड़े सिस्टम जो खर्च घटाते हैं और कुछ ही सालों में लागत निकाल देते हैं।",
+s4t:"सर्विस और सफ़ाई",s4p:"सालाना जाँच और पैनल की सफ़ाई, क्योंकि राजस्थान की धूल बिजली घटाती है।",
+h_gallery:"हमारा काम",galnote:"चित्र उदाहरण के लिए हैं। असली प्रोजेक्ट फ़ोटो images फ़ोल्डर में डालें।",
+g1:"घर की छत, जयपुर",g2:"ग्राउंड-माउंट प्लांट, जोधपुर",g3:"खेत का पंप सिस्टम, बीकानेर",
+h_calc:"सोलर बचत कैलकुलेटर",c_bill:"मासिक बिजली बिल",c_type:"प्रॉपर्टी का प्रकार",t_home:"घर",t_biz:"दुकान / फ़ैक्ट्री",t_farm:"खेत",
+c_note:"ये केवल अनुमान हैं। असली साइज़ और कीमत साइट विज़िट के बाद तय होती है।",r_cost:"सिस्टम की लागत",r_sub:"सब्सिडी (घर)",r_save:"मासिक बचत",r_pay:"लागत वसूल होगी",
+c_send:"यह हमें WhatsApp पर भेजें",yrs:"साल में",kw:"kW सिस्टम सुझाया गया",
+h_process:"कैसे काम करता है",p1t:"हमें मैसेज करें",p1p:"WhatsApp पर अपना बिल और लोकेशन भेजें।",p2t:"मुफ़्त साइट विज़िट",p2p:"हमारे इंजीनियर छत, छाया और लोड जाँचते हैं।",
+p3t:"कोटेशन और सब्सिडी काग़ज़ात",p3p:"लिखित कोटेशन, और सरकारी पोर्टल पर हम मदद करते हैं।",p4t:"इंस्टॉलेशन और नेट मीटर",p4p:"ज़्यादातर घरेलू सिस्टम कुछ दिनों में लग जाते हैं।",
+h_faq:"आम सवाल",q1:"क्या बादल वाले दिन सोलर चलता है?",a1:"हाँ, कम उत्पादन के साथ। राजस्थान में साल भर तेज़ धूप रहती है, इसलिए सालाना उत्पादन अच्छा रहता है।",
+q2:"क्या सरकारी सब्सिडी मिलती है?",a2:"घरों को पीएम सूर्य घर योजना में सब्सिडी मिल सकती है। राशि बदलती रहती है, इसलिए कोटेशन में हम ताज़ा राशि बताते हैं।",
+q3:"पैनल कितने साल चलते हैं?",a3:"अच्छे पैनल पर आमतौर पर 25 साल की वारंटी होती है, साथ में इन्वर्टर और इंस्टॉलेशन की वारंटी भी।",
+h_cities:"हम कहाँ काम करते हैं",h_contact:"WhatsApp पर मुफ़्त सलाह",f_name:"आपका नाम",f_city:"शहर",f_type:"मुझे सोलर चाहिए",f_msg:"कुछ और बताना है?",f_send:"WhatsApp खोलें",
+rights:"सर्वाधिकार सुरक्षित।",open:"अभी खुला है",closed:"अभी बंद है",gm:"सुप्रभात",ga:"नमस्कार",ge:"शुभ संध्या",
+tag:"सोलर से बिजली का बिल घटाइए।",
+m_hi:"नमस्ते WEB SOLOR'S, मुझे सोलर की सलाह चाहिए।",m_calc:"नमस्ते WEB SOLOR'S। मेरा मासिक बिल है",m_need:"अनुमान के अनुसार लगभग",m_form:"नमस्ते WEB SOLOR'S, मुझे मुफ़्त सलाह चाहिए।"}
+};
+
+/* 3. HELPERS AND STATE */
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+const store={get(k,d){try{return localStorage.getItem(k)||d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const S={lang:store.get("lang",(navigator.language||"").startsWith("hi")?"hi":"en"),
+  theme:store.get("theme",matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),
+  accent:store.get("accent","sun"),font:store.get("font","modern")};
+const wa=t=>`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(t)}`;
+const inr=n=>"₹"+Math.round(n).toLocaleString("en-IN");
+
+/* 4. ILLUSTRATIONS: replace with <img src="images/photo1.jpg"> for real photos */
+function panels(x,y,cols,rows,w,h,skew){let s="";for(let r=0;r<rows;r++)for(let c=0;c<cols;c++){const px=x+c*(w+3)+r*skew,py=y+r*(h+3);
+  s+=`<polygon points="${px},${py+h} ${px+skew},${py} ${px+skew+w},${py} ${px+w},${py+h}" fill="#1e3a8a" stroke="#93c5fd" stroke-width="1"/>`}return s}
+function scene(type){
+  const sky=`<defs><linearGradient id="g${type}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--sky1)"/><stop offset="1" style="stop-color:var(--sky2)"/></linearGradient></defs><rect width="400" height="280" fill="url(#g${type})"/>
+  <circle class="sun" cx="330" cy="60" r="24" fill="var(--sun)"/>`;
+  const ground=`<rect y="230" width="400" height="50" fill="#c9a26b"/>`;
+  if(type==="roof")return `<svg viewBox="0 0 400 280" role="img" aria-label="Rooftop solar">${sky}${ground}<rect x="70" y="140" width="260" height="90" fill="#f3e6d0"/><polygon points="55,140 200,70 345,140" fill="#b45309"/>${panels(120,100,4,2,32,20,14)}<rect x="175" y="180" width="40" height="50" fill="#7c4a1e"/><rect x="100" y="165" width="32" height="28" fill="#93c5fd"/><rect x="270" y="165" width="32" height="28" fill="#93c5fd"/></svg>`;
+  if(type==="ground")return `<svg viewBox="0 0 400 280" role="img" aria-label="Ground-mount solar plant">${sky}${ground}${panels(30,150,6,1,44,26,16)}${panels(20,185,6,1,48,28,18)}<rect x="0" y="228" width="400" height="6" fill="#a8824f"/></svg>`;
+  return `<svg viewBox="0 0 400 280" role="img" aria-label="Solar farm pump">${sky}<rect y="220" width="400" height="60" fill="#65a30d"/>${panels(50,150,3,1,44,26,16)}<rect x="250" y="190" width="60" height="40" fill="#64748b"/><rect x="310" y="120" width="8" height="110" fill="#64748b"/><rect x="290" y="105" width="48" height="24" rx="4" fill="#0ea5e9"/><path d="M0 245 Q100 232 200 245 T400 245" stroke="#38bdf8" stroke-width="5" fill="none"/></svg>`}
+$("#heroScene").innerHTML=scene("roof");
+$("#gal").innerHTML=[["ground","g2"],["farm","g3"],["roof","g1"]].map(([t,k])=>`<div class="card">${scene(t)}<div><b data-i="${k}"></b></div></div>`).join("");
+
+/* 5. TIME-BASED COLOURS: the sky and sun follow the real clock */
+function skyFor(h){
+  if(h<5||h>=20)return["#0b1230","#1e2a5a","#e5e7eb",0.5];
+  if(h<8)return["#fb923c","#fde68a","#fff7d6",(h-5)/15];
+  if(h<17)return["#38bdf8","#e0f2fe","#fbbf24",(h-5)/15];
+  return["#f97316","#fde68a","#fff1c1",(h-5)/15];
+}
+function parts(){const p={};new Intl.DateTimeFormat("en-GB",{timeZone:CONFIG.timezone,weekday:"short",hour:"numeric",hour12:false}).formatToParts(new Date()).forEach(x=>p[x.type]=x.value);
+  return{day:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(p.weekday),hour:+p.hour%24}}
+function tick(){
+  const t=T[S.lang],loc=S.lang==="hi"?"hi-IN":"en-IN",now=new Date(),{day,hour}=parts();
+  $("#clock").textContent=new Intl.DateTimeFormat(loc,{timeZone:CONFIG.timezone,weekday:"long",day:"numeric",month:"long",hour:"numeric",minute:"2-digit"}).format(now)+" · "+(CONFIG.openDays.includes(day)&&hour>=CONFIG.openHour&&hour<CONFIG.closeHour?t.open:t.closed);
+  $("#st").classList.toggle("on",CONFIG.openDays.includes(day)&&hour>=CONFIG.openHour&&hour<CONFIG.closeHour);
+  $("#greet").textContent=(hour<12?t.gm:hour<17?t.ga:t.ge)+". "+t.tag;
+  const[a,b,c,f]=skyFor(hour),r=document.documentElement.style;
+  r.setProperty("--sky1",a);r.setProperty("--sky2",b);r.setProperty("--sun",c);
+  const cx=40+Math.max(0,Math.min(1,f))*320,cy=200-Math.sin(Math.max(0,Math.min(1,f))*Math.PI)*150;
+  $$(".sun").forEach(s=>{s.setAttribute("cx",cx);s.setAttribute("cy",cy)});
+  $("#year").textContent=now.getFullYear();
+}
+
+/* 6. CALCULATOR */
+function calc(){
+  const t=T[S.lang],u=CONFIG.units,sb=CONFIG.subsidy,bill=+$("#bill").value,home=$("#ctype").value==="home";
+  $("#billV").textContent=inr(bill);
+  const kw=Math.min(50,Math.max(1,Math.ceil(bill/u.rate/u.perKwMonth))),cost=kw*u.costPerKw;
+  const sub=home?Math.min(sb.max,Math.min(kw,sb.kwFull)*sb.perKw+(kw>=3?sb.third:0)):0;
+  const save=Math.min(bill,kw*u.perKwMonth*u.rate),pay=(cost-sub)/(save*12);
+  $("#kw").textContent=kw+" "+t.kw;$("#rCost").textContent=inr(cost);$("#rSub").textContent=home?inr(sub):"–";
+  $("#rSave").textContent=inr(save);$("#rPay").textContent=pay.toFixed(1)+" "+t.yrs;
+  $("#waCalc").href=wa(`${t.m_calc} ${inr(bill)}. ${t.m_need} ${kw} kW.`);
+}
+
+/* 7. RENDER */
+function applyTheme(){const d=document.documentElement.dataset;d.theme=S.theme;d.accent=S.accent;d.font=S.font;
+  $("#themeBtn").textContent=$("#themeBtn2").textContent=S.theme==="dark"?"☀️":"🌙";
+  $$(".dot").forEach(x=>x.setAttribute("aria-pressed",x.dataset.a===S.accent));
+  $$("#fonts .btn").forEach(x=>x.setAttribute("aria-pressed",x.dataset.f===S.font))}
+function applyLang(){const t=T[S.lang];document.documentElement.lang=S.lang;
+  $$("[data-i]").forEach(e=>{if(t[e.dataset.i])e.textContent=t[e.dataset.i]});
+  $("#langBtn").textContent=S.lang==="en"?"हिं":"EN";
+  $("#cities").innerHTML=CONFIG.cities.map(c=>`<span>${c}</span>`).join("");
+  const keep=$("#fc").value;$("#fc").innerHTML=CONFIG.cities.map(c=>`<option>${c}</option>`).join("");if(keep)$("#fc").value=keep;
+  $("#waHero").href=$("#fab").href=wa(t.m_hi);tick();calc()}
+
+/* 8. EVENTS */
+const menu=o=>{document.body.classList.toggle("menu",o);$("#menuBtn").setAttribute("aria-expanded",o)};
+$("#menuBtn").onclick=()=>menu(true);$("#closeBtn").onclick=$("#overlay").onclick=()=>menu(false);
+$("#drawer nav").onclick=e=>{if(e.target.tagName==="A")menu(false)};
+addEventListener("keydown",e=>{if(e.key==="Escape")menu(false)});
+$("#langBtn").onclick=()=>{S.lang=S.lang==="en"?"hi":"en";store.set("lang",S.lang);applyLang()};
+const flip=()=>{S.theme=S.theme==="dark"?"light":"dark";store.set("theme",S.theme);applyTheme()};
+$("#themeBtn").onclick=$("#themeBtn2").onclick=flip;
+$("#dots").onclick=e=>{const a=e.target.dataset.a;if(a){S.accent=a;store.set("accent",a);applyTheme()}};
+$("#fonts").onclick=e=>{const f=e.target.dataset.f;if(f){S.font=f;store.set("font",f);applyTheme()}};
+$("#bill").oninput=$("#ctype").onchange=calc;
+$("#form").onsubmit=e=>{e.preventDefault();const t=T[S.lang];
+  const msg=`${t.m_form}\n${t.f_name}: ${$("#fn").value}\n${t.f_city}: ${$("#fc").value}\n${t.f_type}: ${$("#ft").value}\n${$("#fm").value}`;
+  window.open(wa(msg),"_blank","noopener")};
+
+applyTheme();applyLang();setInterval(tick,30000);
+</script>
+</body>
+</html>
