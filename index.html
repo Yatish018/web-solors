@@ -56,6 +56,20 @@ html[lang="hi"] h1{line-height:1.3;letter-spacing:0}
 .lead{color:var(--muted);font-size:1.1rem;max-width:50ch}
 .acts{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem}
 .scene{border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+  .scene img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:400/280;
+  object-fit:cover;
+}
+
+.gal .card img{
+  display:block;
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
 .scene svg{display:block;width:100%;height:auto}
 section{padding:3.2rem 0;border-top:1px solid var(--line)}
 h2{font-size:1.8rem;margin:0 0 1.4rem;line-height:1.25}
@@ -143,7 +157,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0 5rem;color:var(--muted)}
 <section id="gallery"><div class="wrap">
   <h2 data-i="h_gallery">Our work</h2>
   <div class="grid gal" id="gal"></div>
-  <p class="lead" style="margin-top:1rem" data-i="galnote">Illustrations shown. Real project photos go in the images folder (see README).</p>
+  <p class="lead" style="margin-top:1rem" data-i="galnote">galnote:"Real project photos from our solar installations.",</p>
 </div></section>
 
 <section id="calculator"><div class="wrap">
@@ -245,7 +259,7 @@ s1t:"घर की छत",s1p:"ऑन-ग्रिड सिस्टम जो
 s2t:"खेत और सोलर पंप",s2p:"सिंचाई के लिए दिन में बिजली, ग्रिड के समय पर निर्भर हुए बिना।",
 s3t:"दुकानें और फ़ैक्ट्रियाँ",s3p:"बड़े सिस्टम जो खर्च घटाते हैं और कुछ ही सालों में लागत निकाल देते हैं।",
 s4t:"सर्विस और सफ़ाई",s4p:"सालाना जाँच और पैनल की सफ़ाई, क्योंकि राजस्थान की धूल बिजली घटाती है।",
-h_gallery:"हमारा काम",galnote:"चित्र उदाहरण के लिए हैं। असली प्रोजेक्ट फ़ोटो images फ़ोल्डर में डालें।",
+h_gallery:"हमारा काम",galnote:"हमारे सोलर इंस्टॉलेशन की वास्तविक प्रोजेक्ट फ़ोटो।",
 g1:"घर की छत, जयपुर",g2:"ग्राउंड-माउंट प्लांट, जोधपुर",g3:"खेत का पंप सिस्टम, बीकानेर",
 h_calc:"सोलर बचत कैलकुलेटर",c_bill:"मासिक बिजली बिल",c_type:"प्रॉपर्टी का प्रकार",t_home:"घर",t_biz:"दुकान / फ़ैक्ट्री",t_farm:"खेत",
 c_note:"ये केवल अनुमान हैं। असली साइज़ और कीमत साइट विज़िट के बाद तय होती है।",r_cost:"सिस्टम की लागत",r_sub:"सब्सिडी (घर)",r_save:"मासिक बचत",r_pay:"लागत वसूल होगी",
@@ -280,9 +294,25 @@ function scene(type){
   if(type==="roof")return `<svg viewBox="0 0 400 280" role="img" aria-label="Rooftop solar">${sky}${ground}<rect x="70" y="140" width="260" height="90" fill="#f3e6d0"/><polygon points="55,140 200,70 345,140" fill="#b45309"/>${panels(120,100,4,2,32,20,14)}<rect x="175" y="180" width="40" height="50" fill="#7c4a1e"/><rect x="100" y="165" width="32" height="28" fill="#93c5fd"/><rect x="270" y="165" width="32" height="28" fill="#93c5fd"/></svg>`;
   if(type==="ground")return `<svg viewBox="0 0 400 280" role="img" aria-label="Ground-mount solar plant">${sky}${ground}${panels(30,150,6,1,44,26,16)}${panels(20,185,6,1,48,28,18)}<rect x="0" y="228" width="400" height="6" fill="#a8824f"/></svg>`;
   return `<svg viewBox="0 0 400 280" role="img" aria-label="Solar farm pump">${sky}<rect y="220" width="400" height="60" fill="#65a30d"/>${panels(50,150,3,1,44,26,16)}<rect x="250" y="190" width="60" height="40" fill="#64748b"/><rect x="310" y="120" width="8" height="110" fill="#64748b"/><rect x="290" y="105" width="48" height="24" rx="4" fill="#0ea5e9"/><path d="M0 245 Q100 232 200 245 T400 245" stroke="#38bdf8" stroke-width="5" fill="none"/></svg>`}
-$("#heroScene").innerHTML=scene("roof");
-$("#gal").innerHTML=[["ground","g2"],["farm","g3"],["roof","g1"]].map(([t,k])=>`<div class="card">${scene(t)}<div><b data-i="${k}"></b></div></div>`).join("");
+$("#heroScene").innerHTML = `
+  <img src="solarvillage.jpg" alt="Solar panel installation in Rajasthan">
+`;
+$("#gal").innerHTML = `
+  <div class="card">
+    <img src="solarvillage.jpg" alt="Solar village project">
+    <div><b data-i="g1"></b></div>
+  </div>
 
+  <div class="card">
+    <img src="roof1.jpg" alt="Rooftop solar installation">
+    <div><b data-i="g2"></b></div>
+  </div>
+
+  <div class="card">
+    <img src="roof1.jpg" alt="Solar rooftop project">
+    <div><b data-i="g3"></b></div>
+  </div>
+`;
 /* 5. TIME-BASED COLOURS: the sky and sun follow the real clock */
 function skyFor(h){
   if(h<5||h>=20)return["#0b1230","#1e2a5a","#e5e7eb",0.5];
