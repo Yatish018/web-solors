@@ -78,8 +78,8 @@ h2{font-size:1.8rem;margin:0 0 1.4rem;line-height:1.25}
 .card h3{margin:.2rem 0 .35rem;font-size:1.1rem;transition:color .3s}
 .card:hover h3{color:var(--accent)}
 .card p{margin:0;color:var(--muted)}
-.card > div:first-child{transition:transform .35s ease}
-.card:hover > div:first-child{transform:scale(1.18) rotate(-6deg)}
+#services .card > div:first-child{transition:transform .35s ease}
+#services .card:hover > div:first-child{transform:scale(1.18) rotate(-6deg)}
 .gal .card{padding:0;overflow:hidden;cursor:pointer}
 .gal .card div{padding:1rem 1.2rem}
 .gal .card:hover{transform:translateY(-9px) scale(1.015)}
@@ -92,6 +92,11 @@ h2{font-size:1.8rem;margin:0 0 1.4rem;line-height:1.25}
 .steps li:before{content:counter(s);position:absolute;left:1rem;top:.9rem;width:1.9rem;height:1.9rem;border-radius:50%;background:var(--accent);color:var(--on);display:grid;place-items:center;font-weight:800;transition:transform .3s}
 .steps li:hover:before{transform:scale(1.15) rotate(8deg)}
 .calc{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+/* Lock the calculator box: it reuses .card for border/background only, so it must never lift, tilt, rotate or scale on hover */
+#calculator .calc.card,
+#calculator .calc.card:hover,
+#calculator .calc.card > div,
+#calculator .calc.card:hover > div{transform:none!important}
 label{font-weight:600;display:block;margin:.6rem 0 .3rem}
 input,select,textarea{font:inherit;padding:.7rem .9rem;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--text);width:100%;transition:border-color .2s,box-shadow .2s}
 input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 20%,transparent)}
